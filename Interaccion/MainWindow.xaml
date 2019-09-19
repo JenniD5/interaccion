@@ -7,8 +7,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBlock x:Name="lblhola" Width="50" Height="30" Margin="10,35,733.6,355" >HOLA</TextBlock>
-        <Button x:Name="btnc" Height="50" Width="50" Click="Btnc_Click" Margin="10,105,733.6,265" RenderTransformOrigin="0.5,0.5" Background="#FFE28484" HorizontalAlignment="Center" VerticalAlignment="Center" >
+        <TextBlock x:Name="lblhola" Height="100" RenderTransformOrigin="0.664,0.66" Margin="30,40,623.6,280"  >HOLA</TextBlock>
+        <Button x:Name="btnc" Height="50" Width="50" Click="Btnc_Click" Margin="40,140,653.6,180" RenderTransformOrigin="0.5,0.5" Background="#FFE28484" HorizontalAlignment="Center" VerticalAlignment="Center" ClickMode="Press" >
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -16,7 +16,13 @@
                     <RotateTransform Angle="5"/>
                     <TranslateTransform/>
                 </TransformGroup>
-            </Button.RenderTransform> cambiar</Button>
+            </Button.RenderTransform> cambiar
+        </Button>
+        <Button Margin="60,255,668.6,115" RenderTransformOrigin="0.474,0.5" x:Name="boton2" 
+                Click="Boton2_Click"
+                
+                >cambiar 2</Button>
+        <Button Margin="45,345,653.6,30" RenderTransformOrigin="0.476,0.562" x:Name="boton3" Click="Boton3_Click">cambiar 3</Button>
 
     </Grid>
 </Window>

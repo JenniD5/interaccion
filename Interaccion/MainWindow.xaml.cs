@@ -23,17 +23,42 @@ namespace Interaccion
         public MainWindow()
         {
             InitializeComponent();
-            lblhola.Text = "HOLA";
-            lblhola.FontSize = 29;
+            
+
+            //manera 1 de hacer un evento con le boton 
+            btnc.Click += Btnc_Click;
+
+        }
+         
+
+
+        private void Btnc_Click(object sender, RoutedEventArgs e)
+                              //elemento que es, o que me manda llamar, tdos los lementos osn object
+                               
+        {
+            
+            lblhola.Text = "adios";
+            lblhola.FontSize = 12;
             lblhola.Foreground = Brushes.Red;
+    
+
 
         }
 
-        private void Btnc_Click(object sender, RoutedEventArgs e)
+        private void Boton2_Click(object sender, RoutedEventArgs e)
         {
-            lblhola.Text = "ADIOS";
-           
+            lblhola.Text = "hola otra vez";
+            lblhola.FontSize = 9;
+            lblhola.Foreground = Brushes.Black;
 
+        }
+
+        private void Boton3_Click(object sender, RoutedEventArgs e)
+        {
+            
+            lblhola.Text = "adios de nuevo ";
+            lblhola.FontSize = 15;
+            lblhola.Foreground = Brushes.Aqua;
         }
     }
 }
